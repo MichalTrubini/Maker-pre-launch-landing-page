@@ -1,15 +1,97 @@
 @import 'normalize','settings','variables';
 
 body {
+    background:$background-body;
     font-family: 'Manrope', sans-serif;
+    text-align: center;
 }
 
 p {
     color:$color-text-lighter;
     font-weight: 500;
+    font-size:1.5rem;
+    line-height: 2.5rem;
 }
 
 h1,h2 {
     color:$color-headings;
     font-weight: 800;
+}
+
+.header {
+    padding:4rem 0 6.5rem;
+}
+
+.padding {
+    padding:0 2.4rem;
+}
+
+.hero {
+
+    margin-bottom:14.4rem;
+
+    &__heading {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        width:75%;
+        margin:auto;
+    }
+
+    &__heading-accent {
+        color:$color-heading-accent;
+    }
+
+    &__about{
+        margin-top:4.75rem;
+    }
+
+    &__paragraph {
+        margin-top:2.3rem;
+        margin-bottom:3.2rem;
+    }
+}
+
+.highlights {
+
+    &__highlight {
+        margin-bottom:5.4rem;
+    }
+
+    &__icon-wrapper {
+        height:124px;
+        width:120px;
+        border-radius: 45px;
+        margin:auto;
+        margin-bottom:3.2rem;
+    }
+
+    &__icon-passion {
+        background: url(../assets/illustration-passions.svg) no-repeat center,$background-card-dark;
+        background-size:66px;
+        background-position-x: 33px;
+    }
+
+    &__icon-freedom {
+        background: url(../assets/illustration-financial-freedom.svg) no-repeat center,$background-card-dark;
+        background-size:56px;
+        background-position-x: 33px;
+    }
+
+    &__icon-lifestyle {
+        background: url(../assets/illustration-lifestyle.svg) no-repeat center,$background-card-dark;
+        background-size:60px;
+        background-position-x: 29px;
+    }
+
+    &__icon-work {
+        background: url(../assets/illustration-work-anywhere.svg) no-repeat center,$background-card-dark;
+        background-size:78px;
+        background-position-x: 24px;
+    }
+
+    &__heading {
+        margin-bottom:1.1rem;
+        font-size:1.8rem;
+        line-height: 2.5rem;
+    }
 }

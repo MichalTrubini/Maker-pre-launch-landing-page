@@ -163,16 +163,94 @@ html {
 }
 
 body {
+  background: #080C20;
   font-family: 'Manrope', sans-serif;
+  text-align: center;
 }
 
 p {
   color: #777F98;
   font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 h1, h2 {
   color: #FFFFFF;
   font-weight: 800;
+}
+
+.header {
+  padding: 4rem 0 6.5rem;
+}
+
+.padding {
+  padding: 0 2.4rem;
+}
+
+.hero {
+  margin-bottom: 14.4rem;
+}
+
+.hero__heading {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  width: 75%;
+  margin: auto;
+}
+
+.hero__heading-accent {
+  color: #3EE9E5;
+}
+
+.hero__about {
+  margin-top: 4.75rem;
+}
+
+.hero__paragraph {
+  margin-top: 2.3rem;
+  margin-bottom: 3.2rem;
+}
+
+.highlights__highlight {
+  margin-bottom: 5.4rem;
+}
+
+.highlights__icon-wrapper {
+  height: 124px;
+  width: 120px;
+  border-radius: 45px;
+  margin: auto;
+  margin-bottom: 3.2rem;
+}
+
+.highlights__icon-passion {
+  background: url(../assets/illustration-passions.svg) no-repeat center, #093F68;
+  background-size: 66px;
+  background-position-x: 33px;
+}
+
+.highlights__icon-freedom {
+  background: url(../assets/illustration-financial-freedom.svg) no-repeat center, #093F68;
+  background-size: 56px;
+  background-position-x: 33px;
+}
+
+.highlights__icon-lifestyle {
+  background: url(../assets/illustration-lifestyle.svg) no-repeat center, #093F68;
+  background-size: 60px;
+  background-position-x: 29px;
+}
+
+.highlights__icon-work {
+  background: url(../assets/illustration-work-anywhere.svg) no-repeat center, #093F68;
+  background-size: 78px;
+  background-position-x: 24px;
+}
+
+.highlights__heading {
+  margin-bottom: 1.1rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
