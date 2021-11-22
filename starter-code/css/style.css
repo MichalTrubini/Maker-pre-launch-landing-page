@@ -175,7 +175,7 @@ p {
   line-height: 2.5rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #FFFFFF;
   font-weight: 800;
 }
@@ -216,6 +216,10 @@ h1, h2 {
   margin-bottom: 5.4rem;
 }
 
+.highlights__highlight:last-child {
+  margin-bottom: 0;
+}
+
 .highlights__icon-wrapper {
   height: 124px;
   width: 120px;
@@ -252,5 +256,95 @@ h1, h2 {
   margin-bottom: 1.1rem;
   font-size: 1.8rem;
   line-height: 2.5rem;
+}
+
+.pricing {
+  margin-top: 14.4rem;
+}
+
+.pricing__about {
+  margin-bottom: 5.6rem;
+}
+
+.pricing__about-heading {
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  margin-bottom: 2.7rem;
+}
+
+.pricing__card {
+  border-radius: 8px;
+  padding: 6rem 3rem 3.2rem;
+  background: #093F68;
+  text-align: left;
+}
+
+.pricing__card-about {
+  margin-bottom: 2.6rem;
+}
+
+.pricing__card-about--lighter {
+  opacity: 0.6;
+}
+
+.pricing__card--secondary {
+  background: #3EE9E5;
+}
+
+.pricing__card-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.9rem;
+}
+
+.pricing__card-price {
+  font-size: 4rem;
+  line-height: 5.4rem;
+}
+
+.pricing__card-price-sm {
+  font-size: 1.5rem;
+}
+
+.pricing__card-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing__card-price-recurrence {
+  opacity: 0.6;
+  margin-left: 0.75rem;
+}
+
+.pricing__card-list {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1.9rem;
+}
+
+.pricing__card-list li {
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.pricing__card-list li:last-child {
+  margin-bottom: 0;
+}
+
+.pricing__card--secondary h2, .pricing__card--secondary h3, .pricing__card--secondary p, .pricing__card--secondary ul {
+  color: #080C20;
+}
+
+.pricing__check-light {
+  -webkit-filter: brightness(0) saturate(100%) invert(72%) sepia(89%) saturate(360%) hue-rotate(120deg) brightness(99%) contrast(86%);
+          filter: brightness(0) saturate(100%) invert(72%) sepia(89%) saturate(360%) hue-rotate(120deg) brightness(99%) contrast(86%);
+}
+
+.pricing__check-light, .pricing__check-dark {
+  margin-right: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

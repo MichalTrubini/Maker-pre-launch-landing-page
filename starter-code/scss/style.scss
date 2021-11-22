@@ -13,7 +13,7 @@ p {
     line-height: 2.5rem;
 }
 
-h1,h2 {
+h1,h2,h3 {
     color:$color-headings;
     font-weight: 800;
 }
@@ -57,6 +57,10 @@ h1,h2 {
         margin-bottom:5.4rem;
     }
 
+    &__highlight:last-child {
+        margin-bottom:0;
+    }
+
     &__icon-wrapper {
         height:124px;
         width:120px;
@@ -93,5 +97,90 @@ h1,h2 {
         margin-bottom:1.1rem;
         font-size:1.8rem;
         line-height: 2.5rem;
+    }
+}
+
+.pricing {
+    margin-top:14.4rem;
+
+    &__about {
+      margin-bottom:5.6rem;  
+    }
+
+    &__about-heading {
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+        margin-bottom:2.7rem;
+    }
+
+    &__card {
+        border-radius: 8px;
+        padding:6rem 3rem 3.2rem;
+        background:$background-card-dark;
+        text-align: left;
+    }
+
+    &__card-about {
+        margin-bottom:2.6rem;
+    }
+
+    &__card-about--lighter {
+        opacity:0.6;
+    }
+
+    &__card--secondary {
+        background:$background-card-light;
+    }
+
+    &__card-heading {
+        font-size: 1.8rem;
+        margin-bottom:1.9rem;
+    }
+
+    &__card-price {
+        font-size: 4rem;
+        line-height: 5.4rem;
+    }
+
+    &__card-price-sm {
+        font-size: 1.5rem;
+    }
+
+    &__card-price-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__card-price-recurrence {
+        opacity: 0.6;
+        margin-left:0.75rem;
+    }
+
+    &__card-list {
+        color:$color-list-light;
+        font-size:1.5rem;
+        line-height: 2.5rem;
+        margin-top:1.9rem;
+    }
+
+    &__card-list li {
+        list-style: none;
+        margin-bottom:1.2rem;
+    }
+
+    &__card-list li:last-child {
+        margin-bottom:0;
+    }
+
+    &__card--secondary h2, &__card--secondary h3, &__card--secondary p, &__card--secondary ul {
+        color:$color-text-dark;
+    }
+
+    &__check-light {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(89%) saturate(360%) hue-rotate(120deg) brightness(99%) contrast(86%);
+    }
+
+    &__check-light, &__check-dark {
+        margin-right:1.5rem;
     }
 }
