@@ -118,6 +118,19 @@ h1,h2,h3 {
         padding:6rem 3rem 3.2rem;
         background:$background-card-dark;
         text-align: left;
+        position: relative;
+    }
+
+    &__top-icon {
+        position: absolute;
+    }
+
+    &__top-icon-primary {
+        top:-22px;
+    }
+
+    &__top-icon-secondary {
+        top:-33px;
     }
 
     &__card-about {
@@ -130,6 +143,7 @@ h1,h2,h3 {
 
     &__card--secondary {
         background:$background-card-light;
+        margin-top:6.5rem;
     }
 
     &__card-heading {
@@ -182,5 +196,42 @@ h1,h2,h3 {
 
     &__check-light, &__check-dark {
         margin-right:1.5rem;
+    }
+}
+
+.footer {
+    margin: 14.4rem 0 16.4rem;
+
+    &__heading {
+        font-size: 2.4rem;
+        width:75%;
+        margin:0 auto 3.1rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width:32.7rem;
+    }
+
+    &__form-element {
+        padding:1.2rem 1.8rem 1.1rem;
+        border:none;
+        border-radius: 24px;
+        outline:none;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 2.5rem;
+    }
+
+    &__input {
+        background: $background-input;
+        color:$White;
+        margin-bottom:2.4rem;
+    }
+
+    &__button {
+        background:$background-button;
+        color:$color-text-dark;
     }
 }

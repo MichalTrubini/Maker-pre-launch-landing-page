@@ -277,6 +277,19 @@ h1, h2, h3 {
   padding: 6rem 3rem 3.2rem;
   background: #093F68;
   text-align: left;
+  position: relative;
+}
+
+.pricing__top-icon {
+  position: absolute;
+}
+
+.pricing__top-icon-primary {
+  top: -22px;
+}
+
+.pricing__top-icon-secondary {
+  top: -33px;
 }
 
 .pricing__card-about {
@@ -289,6 +302,7 @@ h1, h2, h3 {
 
 .pricing__card--secondary {
   background: #3EE9E5;
+  margin-top: 6.5rem;
 }
 
 .pricing__card-heading {
@@ -346,5 +360,47 @@ h1, h2, h3 {
 
 .pricing__check-light, .pricing__check-dark {
   margin-right: 1.5rem;
+}
+
+.footer {
+  margin: 14.4rem 0 16.4rem;
+}
+
+.footer__heading {
+  font-size: 2.4rem;
+  width: 75%;
+  margin: 0 auto 3.1rem;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 32.7rem;
+}
+
+.footer__form-element {
+  padding: 1.2rem 1.8rem 1.1rem;
+  border: none;
+  border-radius: 24px;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+.footer__input {
+  background: #093F68;
+  color: #FFFFFF;
+  margin-bottom: 2.4rem;
+}
+
+.footer__button {
+  background: #3EE9E5;
+  color: #080C20;
 }
 /*# sourceMappingURL=style.css.map */
