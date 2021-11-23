@@ -409,5 +409,110 @@ h1,h2,h3 {
         }
     }
 
+    .highlights {
+        max-width:111rem;
+        display:flex;
+        justify-content: space-between;
+        height:38.3rem;
 
+        &__highlight {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom:0;
+        }
+
+        &__icon-wrapper {
+            margin:0;
+            margin-bottom:4.8rem;
+            width:160px;
+            height:164px;
+        }
+
+        &__icon-passion {
+            background-size:80px;
+            background-position-x: 47px;
+        }
+    
+        &__icon-freedom {
+            background-size:65px;
+            background-position-x: 48px;
+        }
+    
+        &__icon-lifestyle {
+            background-size:70px;
+            background-position-x: 45px;
+        }
+    
+        &__icon-work {
+            background-size:105px;
+            background-position-x: 32px;
+        }
+
+        &__content-wrapper {
+            width:25.5rem;
+        }
+
+        &__heading {
+            margin-bottom:2.3rem;
+        }
+    }
+
+    .margin-left-auto {
+        margin-left:0;
+    }
+
+    .margin-top-auto {
+        margin-top:auto;
+    }
+
+    .pricing {
+        padding:0;
+        margin-top:20.2rem;
+
+        &__about {
+            margin-bottom:11.7rem;
+        }
+
+        &__about-heading {
+            font-size:3.2rem;
+            margin-bottom:2.4rem;
+        }
+
+        &__card {
+            padding:4.9rem 3.8rem 4.8rem;
+        }
+
+        &__card-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        &__card--primary {
+            height:42.5rem;
+        }
+
+        &__card--secondary {
+            margin-top:0;
+            margin-left:3rem;
+            padding: 6.1rem 3.8rem 6rem;
+        }
+    }
+
+    .footer {
+        margin:15.1rem 0 11.7rem;
+        padding:5rem 0 4rem;
+
+        &__heading {
+            margin-bottom:4.2rem;
+            font-size: 3.2rem;
+            line-height: 4.3rem;
+        }
+
+        &__button:hover {
+            cursor: pointer;
+            background:$background-button-hover;
+            color:$White;
+            outline:2px solid $border-button-hover;
+        }
+    }
 }
