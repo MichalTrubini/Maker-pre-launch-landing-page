@@ -182,6 +182,8 @@ h1, h2, h3 {
 
 .header {
   padding: 4rem 0 6.5rem;
+  max-width: 111rem;
+  margin: auto;
 }
 
 .padding {
@@ -493,7 +495,6 @@ h1, h2, h3 {
     width: 45.7rem;
     margin: auto;
     margin-top: 0;
-    background: url(../assets/bg-hero-squiggle.svg) no-repeat;
     background-size: contain;
   }
   .hero__heading {
@@ -502,6 +503,8 @@ h1, h2, h3 {
   .hero__about-wrapper {
     padding: 4.5rem 0 5.5rem;
     margin: auto;
+    background: url(../assets/bg-hero-squiggle.svg) no-repeat center top;
+    background-size: 395px;
   }
   .hero__img-container {
     position: absolute;
@@ -525,6 +528,41 @@ h1, h2, h3 {
   .header {
     padding: 4.8rem 3.9rem 7.7rem;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 8.1rem 0 11.4rem;
+  }
+  .hero {
+    height: 45.9rem;
+    margin-bottom: 20.2rem;
+  }
+  .hero__img-container {
+    width: 155.3rem;
+    height: auto;
+  }
+  .hero__illustration-left, .hero__illustration-right {
+    height: 45.9rem;
+  }
+  .hero__about {
+    width: 54rem;
+    padding: 0;
+  }
+  .hero__about-wrapper {
+    padding: 7rem 0 5.5rem;
+    margin: auto;
+    background-size: 515px;
+  }
+  .hero__heading {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    width: 100%;
+  }
+  .hero__paragraph {
+    margin-top: 2.4rem;
+    margin-bottom: 6.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
