@@ -1,25 +1,25 @@
-let email = document.getElementById('email');
-let submitEmail = document.getElementById('submitEmail');
+//FUNCTIONS
 
-submitEmail.addEventListener('click',validateEmail);
-email.addEventListener('input',checkIfEmpty);
+(function () {
+    let email = document.getElementById('email');
+    let submitEmail = document.getElementById('submitEmail');
+
+    submitEmail.addEventListener('click',validateEmail);
+    email.addEventListener('input',checkIfEmpty);
+  })();
 
 function validateEmail() {
-
     if(!email.validity.valid) addErrorMessage();
-
 }
 
 function addErrorMessage(){
-
     let tag = document.createElement("p");
     let text = document.createTextNode("Oops! That doesn't look like an email address");
     let createdElement = document.querySelector('.error-message');
+    let element = document.querySelector(".footer__input-wrapper");
 
     tag.appendChild(text);
     tag.setAttribute('class', 'error-message');
-
-    let element = document.querySelector(".footer__input-wrapper");
 
     if(element.contains(createdElement)) return
     else
@@ -27,18 +27,17 @@ function addErrorMessage(){
 }
 
 function checkIfEmpty(){
-    
-    let createdElement = document.querySelector('.error-message');
     let email = document.getElementById('email');
+    let createdElement = document.querySelector('.error-message');
 
     if (email.validity.valid && createdElement) createdElement.remove();
     if (email.value === '' && createdElement) createdElement.remove();
 }
 
+//prevent the browser from showing default error bubble / hint
+
 document.addEventListener('invalid', (function(){
     return function(e) {
-      //prevent the browser from showing default error bubble / hint
       e.preventDefault();
-      // optionally fire off some custom validation handler
     };
 })(), true);

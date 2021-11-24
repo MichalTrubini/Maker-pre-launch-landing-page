@@ -245,12 +245,12 @@ h1,h2,h3 {
     &__input {
         background: $background-input;
         color:$White;
-        margin-bottom:2.4rem;
     }
 
     &__button {
         background:$background-button;
         color:$color-text-dark;
+        margin-top:2.4rem;
     }
 
     &__button:hover {
@@ -305,13 +305,13 @@ h1,h2,h3 {
         }
 
         &__input {
-            margin-bottom:0;
             margin-right:1.6rem;
             width:32rem;
         }
 
         &__button {
             width:14rem;
+            margin-top:0;
         }
     }
 
