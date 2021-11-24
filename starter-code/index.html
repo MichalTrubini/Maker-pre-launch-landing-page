@@ -14,7 +14,7 @@
 </head>
 <body>
   <header class="header">
-    <img src="assets/logo.svg" alt="maker" class="header__logo">
+    <a href="#"><img src="assets/logo.svg" alt="maker" class="header__logo"></a>
   </header>
 
   <section class="hero">
@@ -150,8 +150,16 @@
       Get notified when we launch
     </h2>
     <form class="footer__form">
-      <input type="email" class="footer__input footer__form-element" placeholder="Email address">
-      <button class="footer__button footer__form-element">Get notified</button>
+      <div class="footer__input-wrapper">
+        <input type="email" 
+               class="footer__input footer__form-element"
+               id="email"
+               placeholder="Email address"
+               pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+               required
+               >
+      </div>
+      <button class="footer__button footer__form-element" id="submitEmail">Get notified</button>
     </form>
 
   </footer>

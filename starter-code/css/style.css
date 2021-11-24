@@ -435,6 +435,13 @@ h1, h2, h3 {
   color: #080C20;
 }
 
+.footer__button:hover {
+  cursor: pointer;
+  background: #080C20;
+  color: #FFFFFF;
+  outline: 2px solid #3EE9E5;
+}
+
 @media screen and (min-width: 768px) {
   .highlights {
     text-align: left;
@@ -528,6 +535,12 @@ h1, h2, h3 {
   .header {
     padding: 4.8rem 3.9rem 7.7rem;
     text-align: left;
+  }
+  .footer__input-wrapper {
+    position: relative;
+  }
+  .error-message {
+    position: absolute;
   }
 }
 
@@ -657,11 +670,14 @@ h1, h2, h3 {
     font-size: 3.2rem;
     line-height: 4.3rem;
   }
-  .footer__button:hover {
-    cursor: pointer;
-    background: #080C20;
-    color: #FFFFFF;
-    outline: 2px solid #3EE9E5;
-  }
+}
+
+.error-message {
+  color: #FF2965;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  margin: 0.4rem 0;
+  text-align: left;
+  padding-left: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
