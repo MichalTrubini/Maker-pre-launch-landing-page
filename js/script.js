@@ -9,10 +9,11 @@
   })();
 
 function validateEmail() {
-    if(!email.validity.valid) addErrorMessage();
+    if(!email.validity.valid) errorMessage();
 }
 
-function addErrorMessage(){
+function errorMessage(){
+    let email = document.getElementById('email');
     let tag = document.createElement("p");
     let text = document.createTextNode("Oops! That doesn't look like an email address");
     let createdElement = document.querySelector('.error-message');
@@ -22,16 +23,24 @@ function addErrorMessage(){
     tag.setAttribute('class', 'error-message');
 
     if(element.contains(createdElement)) return
-    else
+    else {
     element.appendChild(tag);
+    email.classList.add('highlight-error');
+    }
 }
 
 function checkIfEmpty(){
     let email = document.getElementById('email');
     let createdElement = document.querySelector('.error-message');
 
-    if (email.validity.valid && createdElement) createdElement.remove();
-    if (email.value === '' && createdElement) createdElement.remove();
+    if (email.validity.valid && createdElement) {
+        createdElement.remove();
+        email.classList.remove('highlight-error');
+    }
+    if (email.value === '' && createdElement) {
+        createdElement.remove();
+        email.classList.remove('highlight-error');
+    }
 }
 
 //prevent the browser from showing default error bubble / hint
