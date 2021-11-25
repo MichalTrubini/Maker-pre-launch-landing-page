@@ -162,6 +162,7 @@ h1,h2,h3 {
     &__card-heading {
         font-size: 1.8rem;
         margin-bottom:1.9rem;
+        line-height: 2.5rem;
     }
 
     &__card-price {
@@ -488,12 +489,13 @@ h1,h2,h3 {
         margin-top:20.2rem;
 
         &__about {
-            margin-bottom:11.7rem;
+            margin-bottom:11.5rem;
         }
 
         &__about-heading {
             font-size:3.2rem;
             margin-bottom:2.4rem;
+            line-height: 4.4rem;
         }
 
         &__card {
@@ -517,8 +519,8 @@ h1,h2,h3 {
     }
 
     .footer {
-        margin:15.1rem 0 11.7rem;
-        padding:5rem 0 4rem;
+        margin:20.3rem 0 13rem;
+        padding:0;
 
         &__heading {
             margin-bottom:4.2rem;
